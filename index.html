@@ -22,43 +22,95 @@
 	<style>
 	
 
-	.topnav {
-	  overflow: hidden;
-	  background-color: #A7E4C4;
-	}
-	
-	.topnav a {
-	  float: right;
-	  background-color: #A7E4C4;
-	  color: black;
-	  text-align: center;
-	  padding: 14px 16px;
-	  text-decoration: none;
-	  font-size: 17px;
-	}
-	
-	.topnav a:hover {
-	  background-color: #f2f2f2;
-	  color: black;
-	}
-	
-	.topnav a.active {
-	  background-color: #04AA6D;
-	  color: white;
-	}
+	nav {
 
-	</style>
-</head> 
+  display: flex;
+
+  justify-content: space-around;
+
+  align-items: center;
+
+  background-color: #A7E4C4;
+  padding: 0px;
+  height: 52px;
+
+
+}
+
+.heading {
+  text-align: right;
+
+  color: #199C57;
+
+  font-weight: bold;
+
+  font-size: 30px;
+  padding: 0px 0px;
+
+
+}
+.nav-links {
+
+  display: flex;
+
+  justify-content: space-around;
+
+
+}
+
+.nav-links li {
+
+  list-style: none;
+
+}
+
+.nav-links a {
+
+  float: right;
+  background-color: #A7E4C4;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+
+}
+.nav-links a:hover:not(.active) {
+
+  background-color: #f2f2f2;
+	  color: black;
+}
+
+.nav-links li a.active {
+
+ background-color: #04AA6D;
+	  color: white;
+}
+</style>
+</head>
+
 
 <body>
 	<!-- DEMO ONLY --> 
 		</div>
-	<div class="topnav">
+	 <nav>
+
+      <div class="heading">
+
+        <h4>Giulia L. Celora</h4>
+
+      </div>
+
+      <ul class="nav-links">
+		<li><a href="CV.html">CV</a>	</li>      
+		<li><a href="Teaching.html">Publications</a></li>
+	     <li> <a href="research.html">Research</a></li>
+	     <li> <a class="active" href="index.html">Home</a></li>
+      </ul>
+
+    </nav>
 	<div><h4 class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">Giulia L. Celora</h4></div>
-		<a href="CV.html">CV</a>	      
-		<a href="Teaching.html">Publications</a>
-	      <a href="research.html">Research</a>
-	      <a class="active" href="index.html">Home</a>
+		
 	</div>
 	<div class="main-wrapper">
 		<div class="container px-3 px-lg-5">
